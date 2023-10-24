@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio-typescript-starter-main/static/css/main.ba1aa3c8.css",
+    "main.js": "/portfolio-typescript-starter-main/static/js/main.2fa5e5dd.js",
+    "static/media/home-page.svg": "/portfolio-typescript-starter-main/static/media/home-page.3d99bbe3e9e69e026163d1257c19de1c.svg",
+    "index.html": "/portfolio-typescript-starter-main/index.html",
+    "static/media/download-btn-icon.svg": "/portfolio-typescript-starter-main/static/media/download-btn-icon.db00ff1fa6f1d172b12f9e1441c6d79c.svg",
+    "main.ba1aa3c8.css.map": "/portfolio-typescript-starter-main/static/css/main.ba1aa3c8.css.map",
+    "main.2fa5e5dd.js.map": "/portfolio-typescript-starter-main/static/js/main.2fa5e5dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba1aa3c8.css",
+    "static/js/main.2fa5e5dd.js"
+  ]
+}

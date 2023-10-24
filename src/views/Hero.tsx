@@ -1,0 +1,60 @@
+// assets
+import homePageImg from "../assets/home-page.svg";
+import homePageIllustation from "../assets/hero-illustration.svg";
+import downloadIcon from "../assets/download-btn-icon.svg";
+
+// components
+import { Button } from "../components";
+
+// react-simple-typewriter
+import { Typewriter } from "react-simple-typewriter";
+
+// framer-motion
+import { motion } from "framer-motion";
+
+// utils
+import { transition } from "../utils/transition";
+import { fadeIn, scale } from "../utils/variants";
+
+const Hero = () => {
+  return (
+    <div
+      id="home"
+      className="min-h-screen flex items-center justify-center relative"
+      style={{
+        background: `url(${homePageImg})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
+        <div className="w-full xl:w-fit">
+          <h1 className="w-full xl:w-fit text-center xl:text-start text-4xl sm:text-6xl lg:text-8xl font-bolt text-textPrimary uppercase">
+            creative
+            <br />
+            <span className="text-secondary">
+              <Typewriter
+                loop
+                cursor
+                cursorStyle="_"
+                typeSpeed={250}
+                deleteSpeed={150}
+                delaySpeed={1000}
+                words={["Developer", "Creater", "Designer"]}
+              />
+            </span>
+          </h1>
+          <div className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
+            <Button secondary>Hire Me</Button>
+            <Button secondary icon={downloadIcon}>
+              Download CV
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
